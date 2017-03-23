@@ -1,0 +1,83 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Random Quote Book</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/feb3c7cdbb.js"></script>
+</head>
+<body>
+   <div id="cover" class="orange-back">
+       <div class="row">
+        <div class="col-sm-6"> 
+        <button class="open-book open-button"><i class="fa fa-arrow-left fa-5x" aria-hidden="true"></i></button>
+           
+        <h3 class="directions_1">Click the arrow to go to a random page in the quote book.</h3>
+        </div>
+        
+        <div class="col-sm-6 front-cover">
+        <h1 class="book-title">My Quote Book</h1>
+       </div>
+     </div>
+       </div> 
+
+  
+    <div id="pages"> 
+   <div class="row book-pages">
+       <div class="col-sm-1"></div>
+       <div class="col-sm-4">
+       <div id="quote"></div>
+       <div id="author"></div>
+           <br><br>
+       <div id="tweet">
+       <p>If you love your quote -- tweet it!</p>
+       <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world">
+Tweet</a>
+       </div>
+        </div> 
+        <div class="col-sm-1"></div> 
+       <div class="col-sm-4">
+        <h3 class="directions_2">Click the arrow to close the quote book to pick another quote.</h3> 
+          
+     <button class="close-book close-button"><i class="fa fa-arrow-right fa-5x" aria-hidden="true"></i></button    
+         </div>        
+        
+
+       
+<script>
+  $(document).ready(function(){
+      $("#pages").hide();
+
+});
+    $(".open-book").click(function(){
+        $("#cover").fadeOut("slow");
+        $("#pages").fadeIn("slow");
+        
+      $.getJSON( "http://www.quotzzy.co/api/quote", function(data) {
+         $("#quote").html("<h2 class='quote_stye1'> &#8220;"  + data.text + "</h2>");
+        $("#author").html("<cite class='author_style1'>" + "&#8212; &nbsp;" +  data.author.name + "</cite>");
+          
+  });
+ 
+    });
+        
+
+    $(".close-book").click(function(){
+      /* location.reload(); */
+        $("#pages").fadeOut("slow");
+        $("#cover").fadeIn("slow");
+       
+       
+    });
+    
+</script>
+
+   
+    
+            
+        

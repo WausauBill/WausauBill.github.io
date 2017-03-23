@@ -1,0 +1,103 @@
+h1 {
+    color: black;
+    
+}
+
+.front-cover {
+    background: url("molecover.png");
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    position: relative;
+}
+
+.book-pages {
+    background-image: url("pages.png");
+    background-size: contain;
+    height: 550px;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+.book-title {
+    margin-top: 40%;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 450%;
+    line-height: 150%;
+    color: #3F180A;
+    text-shadow: 4px 4px #F2A700;
+
+}
+.open-button{
+    background: transparent;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    color:#3F180A;
+    float: right;
+    margin-top: 100%;
+        
+}
+.orange-back{
+    background: url(Orange-Gradient-1280x800-10.jpg); 
+}
+.directions_1 {
+    font-family: 'Playfair Display', serif;
+    text-align: right;
+    padding-left: 30%;
+    left: 20%;
+    position: relative;
+    margin-top: 80%;
+}
+.quote_style1{
+    font-family: 'Playfair Display', serif;
+    font-size: .75em !important;
+    color:chocolate;
+      }
+
+.author_style1 {
+    font-family: 'Pacifico', cursive;
+    margin-left: 35%;
+    font-size: 1.5em;
+    color: orangered;
+    
+}
+.jumbotron{
+    background: transparent !important;
+}
+blockquote {
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+line-height: 1.45;
+color: #383838;
+}
+
+h2::first-letter {
+display: block;
+content: "\201C";
+font-size: 160px;
+font-family: 'Playfair Display', serif;    
+color: orangered;
+}
+.directions_2 {
+    font-family: 'Playfair Display', serif;
+    text-align: right;
+    left: 20%;
+    position: relative;
+    margin-top: 90%;
+    background:#f26041;
+}
+.close-button{
+    background: transparent;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    color:#3F180A;
+    float: right;
+    background:#f26041;
+    /*margin-top: 100%;*/
