@@ -2,6 +2,7 @@
         <html lang="en">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <title>Random Quote Book</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,56 +12,71 @@
     <script src="https://use.fontawesome.com/feb3c7cdbb.js"></script>
 </head>
 <body>
-   <div id="cover" class="orange-back">
+   <div id="cover" class="orange-back container">
        <div class="row">
-        <div class="col-sm-6"> 
-        <button class="open-book open-button"><i class="fa fa-arrow-left fa-5x" aria-hidden="true"></i></button>
+        <div class="col-xs-6"> 
+        <button class="open-book open-button"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Click Here for Quote!</button>
+           </div> <!--Button Column end -->
            
-        <h3 class="directions_1">Click the arrow to go to a random page in the quote book.</h3>
-        </div>
-        
-        <div class="col-sm-6 front-cover">
-        <h1 class="book-title">My Quote Book</h1>
-       </div>
-     </div>
-       </div> 
+         
+        <div class="col-xs-6">
+            <div class="cover-box">
+            <div class="text-box">
+                <h1 class="book-title">My Quote Book</h1>
+            </div> <!--Textbox end -->
+        <img src="molecover.png" class="img-responsive img_cover" alt="">
+        </div> <!--Cover-box end -->
+        </div> <!--Book Column End -->
+     </div> <!--Row End -->
+</div> <!-- Cover container End -->
 
   
-    <div id="pages"> 
-   <div class="row book-pages">
-       <div class="col-sm-1"></div>
-       <div class="col-sm-4">
-       <div id="quote"></div>
-       <div id="author"></div>
-           <br><br>
-       <div id="tweet">
-       <p>If you love your quote -- tweet it!</p>
-       <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=Hello%20world">
-Tweet</a>
-       </div>
-        </div> 
-        <div class="col-sm-1"></div> 
-       <div class="col-sm-4">
-        <h3 class="directions_2">Click the arrow to close the quote book to pick another quote.</h3> 
-          
-     <button class="close-book close-button"><i class="fa fa-arrow-right fa-5x" aria-hidden="true"></i></button    
-         </div>        
+<div id="backpages" class="container">
+    <div class="row">
+       <div class="cover-box">
+     <div class="col-xs-1"></div>
+     <div class="col-xs-4">
+     <div class="text-box">
+          <div id="quote"></div>
+          <div id="author"></div>
+            </div>
+            
+    
+        </div> <!--Quote Column -->
+     
+     <div class="col-xs-1"></div>    
+     <div class="col-xs-4">
+     <div class="text-box">
+        <p class="directions_1">If you are inspired by your quote, Tweet it to your followers!</p>
+        <button id="tweet" class="tweet-button twitter-share-button"
+  >Tweet &nbsp; &nbsp; <i class="fa fa-twitter" aria-hidden="true"></i></button>  
+   <p class="directions_1">To get another quote, click the button below</p> 
+    <button class="close-book close-button">Get Another Quote &nbsp; &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button> 
+            </div> 
+         </div>
+         <img src="pages.png" alt="" class="img_cover img-responsive book-pages">
+        </div>
+     
+</div> <!--End Row -->
+ 
+</div> <!--End Backpages -->
+
+
         
 
        
 <script>
   $(document).ready(function(){
-      $("#pages").hide();
+      $("#backpages").hide();
 
 });
     $(".open-book").click(function(){
         $("#cover").fadeOut("slow");
-        $("#pages").fadeIn("slow");
+        $("#backpages").fadeIn("slow");
         
       $.getJSON( "http://www.quotzzy.co/api/quote", function(data) {
-         $("#quote").html("<h2 class='quote_stye1'> &#8220;"  + data.text + "</h2>");
-        $("#author").html("<cite class='author_style1'>" + "&#8212; &nbsp;" +  data.author.name + "</cite>");
+         $("#quote").html("<p class='quotestyle'> &#8220;"  + data.text + "</p>");
+        $("#author").html("<cite class='author_style'>" + "&#8212; &nbsp;" +  data.author.name + "</cite>");
           
   });
  
@@ -68,16 +84,30 @@ Tweet</a>
         
 
     $(".close-book").click(function(){
-      /* location.reload(); */
-        $("#pages").fadeOut("slow");
+        $("#backpages").fadeOut("slow");
         $("#cover").fadeIn("slow");
-       
-       
+        $("#cover").fadeOut("slow");
+        $("#backpages").fadeIn("slow");
+        $.getJSON( "http://www.quotzzy.co/api/quote", function(data) {
+         $("#quote").html("<p class='quotestyle'> &#8220;"  + data.text + "</p>");
+        $("#author").html("<cite class='author_style'>" +   "&#8212; &nbsp;" + data.author.name + "</cite>");
+          
+        });
     });
     
 </script>
 
-   
+ <script>
+    $(".twitter-share-button").click(function(){
+        var quote=$("#quote").text();
+        var artist=$("#author").text();
+        var url="https://twitter.com/intent/tweet?text=";
+      /* window.open("https://twitter.com/intent/tweet?text=Hello%20world");*/
+        window.open(url + "Today's Quote: " + quote + '"  ' + artist);
+        
+        
+    });
+    </script>  
     
             
         

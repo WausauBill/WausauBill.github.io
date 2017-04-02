@@ -5,84 +5,101 @@ h1 {
 
 .front-cover {
     background: url("molecover.png");
-    height: 550px;
-    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 20px;
-    position: relative;
-}
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    }
 
 .book-pages {
     background-image: url("pages.png");
-    background-size: contain;
-    height: 550px;
-    width: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
 }
 .book-title {
-    margin-top: 40%;
-    margin-left: 5%;
-    margin-right: 20%;
-    text-align: center;
+    display: inline-block;
     font-family: 'Pacifico', cursive;
-    font-size: 450%;
-    line-height: 150%;
+    font-size: 7vw;
     color: #3F180A;
     text-shadow: 4px 4px #F2A700;
+    width: 50%;
+    line-height: 1.5em;
+    margin-top: 25%;
 
 }
 .open-button{
     background: transparent;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
     color:#3F180A;
     float: right;
-    margin-top: 100%;
+    font-size: 2vw;
+    margin-top: 95%;
+    background: #3F180A;
+    color:#F2A700;
+    border-radius: 10px;
+    
         
 }
-.orange-back{
-    background: url(Orange-Gradient-1280x800-10.jpg); 
+.open-button:hover{
+    background: #D2691E;
+    color: #FFBF00
 }
+.orange-back{
+    padding-top: 2vh;
+    background-color: #FF7002;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #FF7002 -webkit-gradient(linear, left top, left bottom, from(#E5FF02), to(#FF7002)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #FF7002 -moz-linear-gradient(top, #E5FF02, #FF7002) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5FF02, endColorstr=#FF7002) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5FF02, endColorstr=#E5FF02)" no-repeat;
+}
+
+
 .directions_1 {
     font-family: 'Playfair Display', serif;
-    text-align: right;
-    padding-left: 30%;
+    font-size: 2vw;
+    text-align: center;
     left: 20%;
     position: relative;
-    margin-top: 80%;
+    margin-top: 20%;
 }
-.quote_style1{
+.quotestyle {
     font-family: 'Playfair Display', serif;
-    font-size: .75em !important;
-    color:chocolate;
+    font-size: 2.5vw;
+    color: saddlebrown;
+    display: inline-block;
+    text-align: center;
       }
 
-.author_style1 {
+.author_style {
     font-family: 'Pacifico', cursive;
     margin-left: 35%;
-    font-size: 1.5em;
+    font-size: 1.8vw;
     color: orangered;
     
 }
 .jumbotron{
     background: transparent !important;
 }
-blockquote {
-font-family: Georgia, serif;
-font-size: 18px;
-font-style: italic;
-line-height: 1.45;
-color: #383838;
+
+.quotestyle::first-letter {
+    display: block;
+    content: "\201C";
+    font-size: 12vw;
+    font-family: 'Playfair Display', serif;    
+    color: orangered;
+    line-height: 100%;
 }
 
-h2::first-letter {
-display: block;
-content: "\201C";
-font-size: 160px;
-font-family: 'Playfair Display', serif;    
-color: orangered;
+.quotestyle::first-line{
+    line-height: .2%;
 }
 .directions_2 {
     font-family: 'Playfair Display', serif;
@@ -93,11 +110,61 @@ color: orangered;
     background:#f26041;
 }
 .close-button{
-    background: transparent;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
+    background-color: #e04d18;
     color:#3F180A;
-    float: right;
-    background:#f26041;
-    /*margin-top: 100%;*/
+    margin-left: 25%;
+    border-radius: 8px;
+}
+
+.close-button:hover {
+    background-color: antiquewhite;
+}
+    
+.cover-box {
+    position: relative;
+    display: inline-block;
+}
+
+.img_cover {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-box {
+    position: absolute;
+    height: 100%;
+    text-align: center;    
+    min-width: 100%;
+}
+.text-box1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+.inblock {
+    display:inline-block;
+}
+.book-pages{
+    width:100%;
+}
+
+.tweet-button {
+    background-color: darkorange;
+    color:#F2A700;
+    font-size: 2vw;
+    margin-left: 37%;
+    color:#3F180A;
+    border-radius: 8px;
+        
+}
+.tweet-button:hover {
+    background-color: #552c08;
+    color: #FF7002;
+}
