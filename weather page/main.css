@@ -1,0 +1,72 @@
+body, html, #main {
+    height: 100%;
+    
+}
+h1, h2{
+    color:white;
+    text-align: center;
+    line-height: -2%;
+}
+.default {
+    background-image: url(yellowstone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+.cold {
+    background-image: url(ice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+.cool {
+    background-image: url(cold.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+.warm {
+    background-image: url(farm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+.hot {
+    background-image: url(desert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+h3 {
+    color:#0d2059;
+    font-family: 'Anton', sans-serif;
+    font-size: 275%;
+    background: rgba(250, 235, 215, 0.29);
+    margin: auto;
+    width: 50%;
+    padding: 1%;
+    display: block;
+    line-height: -5%;
+    text-shadow: 2px 2px #c3b036;
+}
+img{
+    width: 25%;
+    height: auto;
+    display: inline-block;
+    margin: -2%
+    
+}

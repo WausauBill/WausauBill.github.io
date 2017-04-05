@@ -1,0 +1,19 @@
+.gradient{
+    background: rgba(255,175,75,1);
+background: -moz-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(242,211,12,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(242,211,12,1)));
+background: -webkit-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(242,211,12,1) 100%);
+background: -o-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(242,211,12,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(242,211,12,1) 100%);
+background: linear-gradient(to bottom, rgba(255,175,75,1) 0%, rgba(242,211,12,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#f2d30c', GradientType=0 );
+height: 100px;
+}
+
+.orange_back {
+    background: orangered;
+    height: auto;
+}
+h1 {
+    color:red;
+}
