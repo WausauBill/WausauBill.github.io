@@ -12,13 +12,13 @@
 <body>
     <div class="container search_section">
         <div id="buttons">
-        <h1>Wikipedia Search Page</h1>
-        <div id="search">
-        <input type='text' value='' placeholder='Search for...'>
-        <button class="search-btn">Search</button>
+            <h1>Wikipedia Search Page</h1>
+            <div id="search">
+                <input type='text' value='' placeholder='Search for...'>
+                <button class="search-btn">Search</button>
             </div>
-        <a id="random" href="https://en.wikipedia.org/wiki/Special:Random">Or Go to a Random Article</a>
-        
+            <a class="random-link" href="https://en.wikipedia.org/wiki/Special:Random">Or Go to a Random Article</a>
+
         </div>
     </div>
     <div id="title"></div>
@@ -33,11 +33,9 @@
             var button = $('button');
             var toSearch = '';
             var searchUrl = 'https://en.wikipedia.org/w/api.php';
-
+            $("#title").hide();
 
             var ajaxArticleData = function() {
-                $(".search_section").hide();
-                        $("#title").append('<h1>Search Results</h1>');
                 $.ajax({
                     url: searchUrl,
                     dataType: 'jsonp',
@@ -63,10 +61,14 @@
                         piprop: 'thumbnail',
                         pilimit: 'max',
                         pithumbsize: 200
+                        
 
                     },
                     success: function(json) {
-                        
+                        $("#title").show();
+                        $(".search_section").hide();
+                        $("#title").append('<h1>Search Results</h1>');
+                        $("#title").append('<a class="link" href="https://wausaubill.github.io/Wikipedia%20search/">Return to Search Page</a>')
                         var pages = json.query.pages;
                         $.map(pages, function(page) {
                             var pageElement = $('<div>');

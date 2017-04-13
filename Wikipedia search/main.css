@@ -67,7 +67,7 @@ h1{
     color: #ff9900;
     font-family: 'Cardo', serif;
     font-size: 3em;
-    padding: 3%;
+    padding-bottom: 3%;
     background-color: rgba(57, 57, 57, 0.72);
 }
 #search {
@@ -78,9 +78,10 @@ input {
     background-color: rgba(57, 57, 57, 0.72);
     padding: 1%;
     width: 75%;
+    color: whitesmoke;
 }
 
-#random {
+.random-link {
     display: inline-block;
     margin-top: 20%;
     background-color: rgba(57, 57, 57, 0.93);
