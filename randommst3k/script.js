@@ -1,55 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Random MST3K Episode Linker</title>
-
-<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="style.css">
-
-
-</head>
-
-<body>
-<div>
-      <ul>
-    <li>In the not too distant future,</li>
-    <li>You'll want to watch MST</li>
- <li>You'll want to pick an episode</li>
- <li>With the help of a robot pal!</li>
-    </ul>
-    <ul>
-    <li>To watch a cheesy movie</li>
-    <li>Push one of the buttons below</li>
- <li>To go see a random show!</li>
-    </ul>
-    </div>
- <div class="bg">
- <p class="red">This button is for those with a high pain tolerance, <br /> it contains all the episodes from Season 0 (KTMA) to Season 10</p>
-
-
-<button class="push" onclick="allRandomLinks()" ></button>
-
- <p class="red">This button is gentler, links are from Seasons 2 - 10</p>
-
- <button class="frank2" onclick="smallRandomLinks()" ></button>
-
-
-    </div>
- <p class="disc">Disclaimer: Episodes available to watch are only those that are full episodes on YouTube.  Linking to playlists and other video services is just not as fun.  Sorry.</p>
-</body>
-</html>
-<script>
 var links = [
         //Season 0 KTMA
         "https://www.youtube.com/watch?v=lbWO2N0P9Uo", //Pilot
@@ -248,5 +196,3 @@ function smallRandomLinks(){
 
     window.open(links[smallRandom]);
 }
-
-</script>

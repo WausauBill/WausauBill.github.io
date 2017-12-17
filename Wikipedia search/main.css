@@ -13,11 +13,14 @@ body, html {
     width: 100%;
 }
 .articles {
+    /*display: flex;
+    flex-flow: column;*/
     background-color: #393939;
     color:#b9ab88;
     font-family: 'Cardo', serif;
     column-count: 2;
     column-gap: 3%;
+    column-width: 225px;
     padding-left: 2%;
     padding-right: 2%;
     orphans:5;
@@ -89,7 +92,6 @@ input {
     font-family: 'Cardo', serif;
     font-size: 1.5em;
     padding: 2%;
-    border-radius: 15%;
 }
 .search-btn {
     background-color: #ff9900;
