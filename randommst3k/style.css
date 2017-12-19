@@ -22,7 +22,7 @@ p, li {
     list-style-type: none;
     font-family: 'Cormorant', serif;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 7vh;
 }
 
 .push {
