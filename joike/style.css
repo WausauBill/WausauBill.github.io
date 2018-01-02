@@ -1,0 +1,74 @@
+
+body, html {
+
+    background: black;
+
+}
+.bg {
+    /* The image used */
+    position: relative;
+    background: url("https://unwinnable.com/wp-content/uploads/2011/05/mst3k.jpg") no-repeat center bottom;
+    background-size: contain;
+    height: auto;
+    width:100%;
+    padding-bottom: 30vh;
+
+
+}
+
+p, li {
+    color:yellow;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Cormorant', serif;
+    font-weight: bolder;
+    font-size: 4vh;
+}
+
+.push {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    background: url(hurting.png) no-repeat, center center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: auto;
+
+}
+.frank2 {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    background-image: url(button.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+
+
+
+
+}
+.disc {
+    color:bisque;
+    font-size: small;
+}
+
+.red {
+    color: red;
+}
+img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -30vh;
+    z-index: -1;
+
+
+
+}
