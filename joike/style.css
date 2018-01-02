@@ -25,11 +25,11 @@ p, li {
     font-size: 4vh;
 }
 
-.push {
+.joel {
     display: block;
     height: 30vw;
     width: 30vw;
-    background: url(hurting.png) no-repeat, center center;
+    background: url(Joel.png) no-repeat, center center;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,11 +37,11 @@ p, li {
     margin: auto;
 
 }
-.frank2 {
+.mike {
     display: block;
     height: 30vw;
     width: 30vw;
-    background-image: url(button.png);
+    background-image: url(mike.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,11 +49,22 @@ p, li {
     border: none;
     margin-right: auto;
     margin-left: auto;
-
-
-
-
 }
+
+.joike {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    background-image: url(joike.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .disc {
     color:bisque;
     font-size: small;

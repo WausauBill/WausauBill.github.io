@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Random MST3K Episode Linker</title>
+    <title>Random MST3K Episode Linker: Joel vs Mike Edition</title>
 
 <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
 
@@ -35,14 +35,18 @@
     </ul>
     </div>
  <div class="bg">
- <p class="red">This button is for those with a high pain tolerance, <br /> it contains all the episodes from Season 0 (KTMA) to Season 10</p>
 
+     <p class="red">Press the button to get a random Joel Episode!  Warning! Includes the KTMA Episodes (where applicable!)</p>
 
-<button class="push" onclick="allRandomLinks()" ></button>
+     <button class="joel" onclick="joelLinks()" ></button>
 
- <p class="red">This button is gentler, links are from Seasons 2 - 10</p>
+     <p class="red">Press this button for a random Mike Episode</p>
 
- <button class="frank2" onclick="smallRandomLinks()" ></button>
+     <button class="mike" onclick="mikeLinks()" ></button>
+
+     <p class="red">Why take sides?  Press this button for random episode from Seasons 1 - 10</p>
+
+     <button class="joike" onclick="joikeLinks()" ></button>
 
 
     </div>
@@ -51,7 +55,6 @@
 </html>
 <script>
 var links = [
-        //Season 0 KTMA
         //Season 0 KTMA
         "https://www.youtube.com/watch?v=lbWO2N0P9Uo", //Pilot
         "https://www.youtube.com/watch?v=eILu0r-VDsU",  //K04
@@ -259,15 +262,22 @@ var links = [
         "https://www.youtube.com/watch?v=UZrNFN_WAOE"   //1013
     ];
 
-function allRandomLinks(){
-    var allRandom=Math.floor(Math.random()*links.length);
+function joelLinks(){
+    var joelRandom=Math.floor(Math.random()*106);
 
-    window.open(links[allRandom]);
+    window.open(links[joelRandom]);
 }
-function smallRandomLinks(){
-    var smallRandom=Math.floor(Math.random()*(links.length - 31)+30);
 
-    window.open(links[smallRandom]);
+function mikeLinks(){
+    var mikeRandom=Math.floor(Math.random()*(links.length - 106)+105);
+
+    window.open(links[mikeRandom]);
+}
+
+function joikeLinks() {
+    var joikeRandom=Math.floor(Math.random()*(links.length+1));
+
+    window.open(links[joikeRandom]);
 }
 
 </script>
