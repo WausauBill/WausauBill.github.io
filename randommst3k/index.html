@@ -52,7 +52,6 @@
 <script>
 var links = [
         //Season 0 KTMA
-        //Season 0 KTMA
         "https://www.youtube.com/watch?v=lbWO2N0P9Uo", //Pilot
         "https://www.youtube.com/watch?v=eILu0r-VDsU",  //K04
         "https://www.youtube.com/watch?v=dLNRUpSfkZg",  //K05
@@ -260,12 +259,12 @@ var links = [
     ];
 
 function allRandomLinks(){
-    var allRandom=Math.floor(Math.random()*links.length);
+    var allRandom=Math.floor(Math.random()*links.length+1);
 
     window.open(links[allRandom]);
 }
 function smallRandomLinks(){
-    var smallRandom=Math.floor(Math.random()*(links.length - 31)+30);
+    var smallRandom=Math.floor(Math.random()*(links.length - 30)+30);
 
     window.open(links[smallRandom]);
 }
