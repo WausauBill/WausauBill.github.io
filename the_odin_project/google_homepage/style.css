@@ -1,0 +1,134 @@
+#topnav {
+    display: grid;
+    grid-template-columns: .6fr 7fr .6fr .6fr .6fr 1fr;
+    align-items: center;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 1.5fr 9fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #EAE8E7;
+    width: 100%;
+    margin-top: 10vw;
+    color: gray;
+}
+.navbar {
+    margin-bottom: 2vw;
+}
+
+#main {
+    margin: auto;
+
+}
+
+img {
+    display: block;
+    margin:auto;
+    padding-bottom: 20px;
+}
+
+.doodle {
+    width: 80 vw;
+}
+
+input[type="search"]{
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-size: 30px;
+    border: solid 1px #EAE8E7;
+    box-shadow: 3px 3px #EAE8E7
+
+
+}
+
+#search {
+    float: left;
+    display: block;
+    margin-left: 30vw;
+
+}
+
+#lucky {
+    float: right;
+    display: block;
+    margin-right: 30vw;
+
+}
+
+.search {
+    font-weight: bold;
+    color: darkslategray;
+    border: none;
+    background-color: rgba(234, 232, 231, 0.7);
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.search:hover {
+    font-weight: bold;
+    color: darkslategray;
+    background-color: white;
+    border: 2px solid gray;
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.login {
+    cursor: pointer;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    font-family: ariel, sans-serif;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    border-radius: 3px;
+}
+
+#footer a {
+    color: dimgrey;
+}
+
+.icon {
+    color: blue;
+    left:80vw;
+    position:absolute;
+    top:5px;
+    z-index:5;
+
+}
+
+.input-container {
+    position: relative;
+}
+
+/*.navbar a {
+    float: left
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Helvetica;
+    font-weight: lighter;
+} */
+
+/*.navbar {
+    margin-bottom: 20px;
+}*/
+
+
+
