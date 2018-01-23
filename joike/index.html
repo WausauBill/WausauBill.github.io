@@ -36,7 +36,7 @@
     </div>
  <div class="bg">
 
-     <p class="red">Press the button to get a random Joel Episode!  Warning! Includes the KTMA Episodes (where applicable!)</p>
+     <p class="red">Press the button to get a random Joel Episode!  Warning! Includes the KTMA Episodes (Where Applicable!)</p>
 
      <button class="joel" onclick="joelLinks()" ></button>
 
@@ -47,6 +47,14 @@
      <p class="red">Why take sides?  Press this button for random episode from Seasons 1 - 10</p>
 
      <button class="joike" onclick="joikeLinks()" ></button>
+
+     <p class="red">By popular request!</p>
+     <p class="red">Click the button below if you would like to also add in the MST3K "The Return" episodes on Netflix.  Seasons 1-11!</p>
+     <p class="red">Make sure you are logged in to your NetFlix account!</p>
+
+     <button class="joikah" onclick="joikahLinks()" ></button>
+
+
 
 
     </div>
@@ -263,21 +271,28 @@ var links = [
     ];
 
 function joelLinks(){
-    var joelRandom=Math.floor(Math.random()*106);
+    var joelRandom=Math.floor(Math.random()*107);
 
     window.open(links[joelRandom]);
 }
 
 function mikeLinks(){
-    var mikeRandom=Math.floor(Math.random()*(links.length - 106)+105);
+    var mikeRandom=Math.floor(Math.random()*(99)+107);
 
     window.open(links[mikeRandom]);
 }
 
 function joikeLinks() {
-    var joikeRandom=Math.floor(Math.random()*(links.length+1));
+    var joikeRandom=Math.floor(Math.random()*(186)+22);
 
     window.open(links[joikeRandom]);
 }
+
+function joikahLinks() {
+    var joikahRandom=Math.floor(Math.random()*(links.length+1)+22);
+
+    window.open(links[joikahRandom]);
+}
+
 
 </script>

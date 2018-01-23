@@ -65,6 +65,21 @@ p, li {
     margin-left: auto;
 }
 
+.joikah {
+    display: block;
+    height: 30vw;
+    width: 30vw;
+    background-image: url(logobots.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10vw;
+}
+
 .disc {
     color:bisque;
     font-size: small;
