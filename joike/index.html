@@ -64,213 +64,221 @@
 </body>
 </html>
 <script>
-/*var links = [
-        //Season 0 KTMA
-        "https://www.youtube.com/watch?v=lbWO2N0P9Uo", //Pilot
-        "https://www.youtube.com/watch?v=eILu0r-VDsU",  //K04
-        "https://www.youtube.com/watch?v=dLNRUpSfkZg",  //K05
-        "https://www.youtube.com/watch?v=Ttn85mzcQeQ",  //K06
-        "https://www.youtube.com/watch?v=RCGvR3BReUg",  //K07
-        "https://www.youtube.com/watch?v=8NqgFQqoeGM",  //K08
-        "https://www.youtube.com/watch?v=_YlYz6Nzq-s",  //K09
-        "https://www.youtube.com/watch?v=59ZhtLGwh8Y",  //K10
-        "https://www.youtube.com/watch?v=WSz8FsRn1cU",  //K11
-        "https://www.youtube.com/watch?v=lsYkRI7VIQs",  //K12
-        "https://www.youtube.com/watch?v=wKNzq4Vxpx8",  //K13
-        "https://www.youtube.com/watch?v=0YCy8mhx6sA",  //K14
-        "https://www.youtube.com/watch?v=4eMgVog6vvo",  //K15
-        "https://www.youtube.com/watch?v=k2Adw6iTSug",  //K16
-        "https://www.youtube.com/watch?v=Afv5wl_OvvU",  //K17
-        "http://tinyurl.com/qekphz",  //K18
-        "https://www.youtube.com/watch?v=BNKWxPoLUiA",  //K19
-        "https://www.youtube.com/watch?v=FiNmX2nYBck",  //K20
-        "https://www.youtube.com/watch?v=lxceqsl2Q30",  //K21
-        //Season 1
-        "https://www.youtube.com/watch?v=lJgQrjYaLbQ",  //101
-        "https://www.youtube.com/watch?v=JhwA-z-loWM",  //102
-        "https://www.youtube.com/watch?v=ZJVJNqPeQ14",  //103
-        "https://www.youtube.com/watch?v=4gctG58Q6Tg",  //104
-        "https://www.youtube.com/watch?v=IdZK6YTdB4Y",  //105
-        "https://www.youtube.com/watch?v=oQsQFijFRkg",  //106
-        "https://www.youtube.com/watch?v=59SGQzvT5fo",   //107
-        "https://www.youtube.com/watch?v=pE2IUff2lzQ",   //108
-        "https://www.youtube.com/watch?v=Gr3At4ez4OA",   //109
-        "https://www.youtube.com/watch?v=KO9-Fo1EbkQ",   //110
-        "https://www.youtube.com/watch?v=azsXZs3C6DY",   //111
-        "https://www.youtube.com/watch?v=e7K0IG15ONo",   //112
-        "http://tinyurl.com/yb2mcp5q", //113
-        //Season 2
-        "https://www.youtube.com/watch?v=Zh-fuDK4HVg",   //201
-        "https://www.youtube.com/watch?v=b97G5YQ8eF8",  //203
-        "http://www.dailymotion.com/playlist/x55mud",   //204
-        "https://www.youtube.com/watch?v=7JZbMh5kiNo",  //205
-        "https://www.youtube.com/watch?v=-0PyR90HMcY",  //206
-        "https://www.youtube.com/watch?v=yk-E-BWh4aM",  //207
-        "https://www.youtube.com/watch?v=tKArYUxPrBU",  //208
-        "https://www.youtube.com/watch?v=Pg7tL5nAwvw",  //209
-        "https://www.youtube.com/watch?v=81rfhN4TRFk",  //210
-        "http://www.dailymotion.com/playlist/x55muf", //211
-        "http://www.dailymotion.com/playlist/x55mul", //212
-        "http://tinyurl.com/csvx5bw",  //213
 
-        //Season 3
-        "https://www.youtube.com/watch?v=xKhdpx-_H3o",  //301
-        "https://www.youtube.com/watch?v=gfc6ooM_OL0",  //302
-        "https://www.youtube.com/watch?v=6A6QqpThn9o",  //303
-        "https://www.youtube.com/watch?v=R8-ZsBZpVq4",  //304
-        "https://www.youtube.com/watch?v=5G0HcmRL1uM",  //305
-        "https://www.youtube.com/watch?v=bOBibhv7Q_8",  //306
-        "https://www.youtube.com/watch?v=uhyiCzWthZg",  //307
-        "https://www.youtube.com/watch?v=bWZmNQYstXU",  //308
-        "https://www.youtube.com/watch?v=rwVX7yzBt7w",  //309
-        "https://www.youtube.com/watch?v=gASvIqetmdk",   //310
-        "https://www.youtube.com/watch?v=4iJdI2lnC4s",  //311
-        "https://www.youtube.com/watch?v=2vWLwuWPLsQ",  //312
-        "https://www.youtube.com/watch?v=hQpIXfZ8jlU",  //313
-        "https://www.youtube.com/watch?v=EAH2Ks1bFXU",  //314
-        "https://www.youtube.com/watch?v=kR9QPnMYsuQ",  //315
-        "https://www.youtube.com/watch?v=I6Hj9ByK1TQ",  //316
-        "https://www.youtube.com/watch?v=B0FPXYeLvL0",  //317
-        "https://www.youtube.com/watch?v=d5cRFCoUuSw",  //318
-        "https://www.youtube.com/watch?v=qND_l5mpQRU",  //319
-        "https://www.youtube.com/watch?v=zZrhkRv7n_8",  //320
-        "http://www.dailymotion.com/playlist/x55mvr",  //321
-        "https://www.youtube.com/watch?v=JVeEEf5vCBg",  //322
-        "http://tinyurl.com/ybmqxjyo", //323
-        "https://www.youtube.com/watch?v=9SZrvOCYXP8",  //324
-        //Season 4
-        "https://www.youtube.com/watch?v=ax3q-RkVIt4",  //401
-        "https://www.youtube.com/watch?v=nt5SAHgKxKI",  //402
-        "https://www.youtube.com/watch?v=uFjBQPYvr3o",  //403
-        "https://www.youtube.com/watch?v=4a2_5dEqJ3Y",  //404
-        "https://www.youtube.com/watch?v=17xM5qJJQ-I",  //405
-        "https://www.youtube.com/watch?v=SW-4_Cx_vRw",  //406
-        "https://www.youtube.com/watch?v=YjOMaT4aA7E",  //407
-        "https://www.youtube.com/watch?v=_4Eei5MhDDU",  //408
-        "https://www.youtube.com/watch?v=CmWz-FEIMY8", //409
-        "https://www.youtube.com/watch?v=Xow4naSPhGE",  //410
-        "https://www.youtube.com/watch?v=yzhEnz2MhHI",  //411
-        "https://www.youtube.com/watch?v=wjG1FPi0T3A",  //412
-        "https://www.youtube.com/watch?v=NbE7QS9V94g",  //413
-        "https://www.youtube.com/watch?v=gr3TFZUaKpk",  //414
-        "https://www.youtube.com/watch?v=q1ZsASUEnkQ",  //415
-        "https://www.youtube.com/watch?v=c6i0q5ytQsI",  //416
-        "https://www.youtube.com/watch?v=GPtCQbxXO8E",  //417
-        "https://www.youtube.com/watch?v=5jVrsmFXleM",  //418
-        "https://www.youtube.com/watch?v=u_ArVbKHZVg",  //419
-        "https://www.youtube.com/watch?v=wTnX8ogbPng",  //420
-        "https://www.youtube.com/watch?v=tAeTokmEaxM",  //421
-        "https://www.youtube.com/watch?v=VIISEsgFGHA",  //422
-        "https://www.youtube.com/watch?v=j7A1wr7ec14",  //423
-        "https://www.youtube.com/watch?v=NGkkgxFRf_M",  //424
-        //Season 5
-        "https://www.youtube.com/watch?v=S1kFs73N7KQ",  //501
-        "https://www.youtube.com/watch?v=fXQIS3cZ9ps",  //502
-        "https://www.youtube.com/watch?v=--XF9ivjGF8",  //503
-        "https://www.youtube.com/watch?v=jcYAhI8HgYo",  //504
-        "https://www.youtube.com/watch?v=Q6McFFvI1KQ",  //505
-        "https://www.youtube.com/watch?v=2ShuGJBwmbk",  //506
-        "https://www.youtube.com/watch?v=f-8PipctX74",  //507
-        "https://www.youtube.com/watch?v=DJVBaoaU1rU",  //508
-        "https://www.youtube.com/watch?v=GuIsLNpOKn0",  //509
-        "https://www.youtube.com/watch?v=vo0-XKxm9Yk",  //510
-        "https://www.youtube.com/watch?v=X-jxRvFFvSI",  //511
-        "https://www.youtube.com/watch?v=vmNZwJTp9nM",  //512
-        "https://www.youtube.com/watch?v=I71OlRUDCQQ",  //513
-        "https://www.youtube.com/watch?v=GH29EY46Do0",  //514
-        "https://www.youtube.com/watch?v=U56z-l4FGiw",  //515
-        "https://www.youtube.com/watch?v=Xk2oiI9YfU4",  //516
-        "http://www.dailymotion.com/playlist/x55mvs", //517
-        "https://www.youtube.com/watch?v=OciggOdKFT4",  //518
-        "https://www.youtube.com/watch?v=WkgyvgG2fXs",  //519
-        "https://www.youtube.com/watch?v=2ZjOc6782fE",  //520
-        "http://tinyurl.com/yarkmnr6", //521
-        "https://www.youtube.com/watch?v=uaQuwVtOgf8",  //522
-        "https://www.youtube.com/watch?v=BELBXRnwLcY",  //523
-        "https://www.youtube.com/watch?v=5tcunnlA81s",  //524
-        //Season 6
-        "https://www.youtube.com/watch?v=6fwltw2tvxs",  //601
-        "https://www.youtube.com/watch?v=Qy6vXTpyQ0o",  //602
-        "https://www.youtube.com/watch?v=Nrsjk-_QYhc",  //603
-        "https://www.youtube.com/watch?v=qRY1t7CITH4",  //604
-        "https://www.youtube.com/watch?v=0CzqwaM8uYM",  //605
-        "https://www.youtube.com/watch?v=Zq_Spa9PTyw",  //606
-        "https://www.youtube.com/watch?v=13KBhGnJygg",  //607
-        "https://www.youtube.com/watch?v=Eoqow7NDm9A",  //608
-        "https://www.youtube.com/watch?v=S-OeJTckcRc",  //609
-        "https://www.youtube.com/watch?v=R4HjATyvuTY",  //610
-        "https://www.youtube.com/watch?v=adgORB7HcqI",  //611
-        "https://www.youtube.com/watch?v=srIQ0cjsKjc",  //612
-        "https://www.youtube.com/watch?v=UuNfxa_vF0A",  //613
-        "https://www.youtube.com/watch?v=RYX1UYLbF7c",  //614
-        "https://www.youtube.com/watch?v=mvuOHxsq3h4",  //615
-        "https://www.youtube.com/watch?v=YljZdtojVSg",  //616
-        "https://www.youtube.com/watch?v=itJ9Pr-H9RU",  //617
-        "https://www.youtube.com/watch?v=h4xbQFgw_DY",  //618
-        "https://www.youtube.com/watch?v=_GomCoF7d1U",  //619
-        "https://www.youtube.com/watch?v=9NOita-7C4k",  //620
-        "https://www.youtube.com/watch?v=m0f5Dckh1F8",  //621
-        "https://www.youtube.com/watch?v=EyCpqxzvdls",  //622
-        "https://www.youtube.com/watch?v=AwZaW4c6eFc",  //623
-        "https://www.youtube.com/watch?v=zJDkuBeV_QA",  //624
-        //Season 7
-        "https://www.youtube.com/watch?v=qzIY_RjwSNQ",  //701
-        "https://www.youtube.com/watch?v=jCvfdHeJ0LY",  //702
-        "https://www.youtube.com/watch?v=83WgWCROcbk",  //703
-        "https://www.youtube.com/watch?v=up77D5y4hm4",  //704
-        "https://www.youtube.com/watch?v=zHFrZ5lcXMk",  //705
-        "https://www.youtube.com/watch?v=9nNICUQWOIw",  //706
-        //Season 8
-        "https://www.youtube.com/watch?v=4UhIzXPvccw",  //801
-        "https://www.youtube.com/watch?v=8Y4M4JV_yH8",  //802
-        "https://www.youtube.com/watch?v=hq6AlUUCgi4",  //803
-        "https://vimeo.com/143358075", //804
-        "https://vimeo.com/147289223", //805
-        "https://www.youtube.com/watch?v=CvuT98RPrNI",  //806
-        "https://www.youtube.com/watch?v=0RoxvglS0Es",  //807
-        "https://www.youtube.com/watch?v=BscbOScRhbE",  //808
-        "https://www.youtube.com/watch?v=Dk35WVCTfew",  //809
-        "https://www.youtube.com/watch?v=4zll4BV36Qc",  //810
-        "https://www.youtube.com/watch?v=WspeHC7eoOI",  //811
-        "https://www.youtube.com/watch?v=cCZRr3gz5-Q",  //812
-        "http://www.dailymotion.com/playlist/x55mvx", //813
-        "https://www.youtube.com/watch?v=MWDUtcc_o8A",  //814
-        "https://www.youtube.com/watch?v=LM07B-kv4mA",  //815
-        "https://www.youtube.com/watch?v=x2XC5XBEjxs",  //816
-        "https://www.youtube.com/watch?v=FelS3c2IPck",  //817
-        "https://www.youtube.com/watch?v=MzHFncpagQA",  //818
-        "https://www.youtube.com/watch?v=h-POdCTOUZY",  //819
-        "https://youtu.be/W6OYf8W4Qko",  //820
-        "http://www.dailymotion.com/playlist/x55mw1",  //821
-        "https://www.youtube.com/watch?v=IjV-0ibZTuY",  //822
-        //Season 9
-        "https://www.youtube.com/watch?v=wXI7fzNLiyw",  //901
-        "https://www.youtube.com/watch?v=z-2Bo3ZM2uo",  //902
-        "https://www.youtube.com/watch?v=GnRxbH5Ay4I",  //903
-        "https://www.youtube.com/watch?v=0uMPkIiHjb8",  //904
-        "http://tinyurl.com/y8whzqyy",  //905
-        "https://vimeo.com/96649816",  //906
-        "https://www.youtube.com/watch?v=YK6x2GuSNXw",  //907
-        "https://www.youtube.com/watch?v=wvQLVHIA2h8",  //908
-        "https://www.youtube.com/watch?v=f0jgoNstum0",  //910
-        "https://www.youtube.com/watch?v=eqsYyFRMVWA",  //911
-        "http://www.dailymotion.com/playlist/x55mw7",  //912
-        "https://www.youtube.com/watch?v=UvPzxC_HpPA",  //913
-        //Season 10
-        "https://www.youtube.com/watch?v=tKYk0eFbtVg",  //1001
-        "https://www.youtube.com/watch?v=W62ZWobFaYU",  //1002
-        "http://www.dailymotion.com/playlist/x55mwa", //1003
-        "https://www.youtube.com/watch?v=YYY2UiST-mg",  //1004
-        "https://www.youtube.com/watch?v=cmF6VnjsAhs",  //1005
-        "https://www.youtube.com/watch?v=Hb83lQwJzJw",  //1006
-        "https://www.youtube.com/watch?v=MyKMRSP23f8",  //1007
-        "https://www.youtube.com/watch?v=KLSqySFnAUM",  //1008
-        "https://www.youtube.com/watch?v=4Qub6jF9g7Q",  //1009
-        "https://www.youtube.com/watch?v=kP-MR_yoW8E",  //1010
-        "https://www.youtube.com/watch?v=kROILS6r_e4",  //1011
-        "https://www.youtube.com/watch?v=PWZncth94j8",  //1012
-        "https://www.youtube.com/watch?v=UZrNFN_WAOE"   //1013
-    ];*/
+var links = [
+"https://www.youtube.com/watch?v=lbWO2N0P9Uo",
+"https://www.youtube.com/watch?v=mxxag_OFnuY",
+"https://www.youtube.com/watch?v=3Cjmm7DrvGM",
+"https://www.youtube.com/watch?v=sKX7Upb7PLI",
+"https://www.youtube.com/watch?v=eILu0r-VDsU",
+"https://www.youtube.com/watch?v=dLNRUpSfkZg",
+"https://www.youtube.com/watch?v=Ttn85mzcQeQ",
+"https://www.youtube.com/watch?v=RCGvR3BReUg",
+"https://www.youtube.com/watch?v=8NqgFQqoeGM",
+"https://www.youtube.com/watch?v=_YlYz6Nzq-s",
+"https://www.youtube.com/watch?v=59ZhtLGwh8Y",
+"https://www.youtube.com/watch?v=WSz8FsRn1cU",
+"https://www.youtube.com/watch?v=lsYkRI7VIQs",
+"https://www.youtube.com/watch?v=wKNzq4Vxpx8",
+"https://www.youtube.com/watch?v=0YCy8mhx6sA",
+"https://www.youtube.com/watch?v=4eMgVog6vvo",
+"https://www.youtube.com/watch?v=k2Adw6iTSug",
+"https://www.youtube.com/watch?v=Afv5wl_OvvU",
+"https://ia801702.us.archive.org/18/items/mst3k_season_0/MST3K%20-%20K18%20-%2020020917%20-%20The%20Million%20Eyes%20of%20Sumuru.mp4",
+"https://www.youtube.com/watch?v=BNKWxPoLUiA",
+"https://www.youtube.com/watch?v=FiNmX2nYBck",
+"https://www.youtube.com/watch?v=lxceqsl2Q30",
+"https://www.youtube.com/watch?v=lJgQrjYaLbQ",
+"https://www.youtube.com/watch?v=JhwA-z-loWM",
+"https://www.youtube.com/watch?v=ZJVJNqPeQ14",
+"https://www.youtube.com/watch?v=4gctG58Q6Tg",
+"https://www.youtube.com/watch?v=IdZK6YTdB4Y",
+"https://www.youtube.com/watch?v=oQsQFijFRkg",
+"https://www.youtube.com/watch?v=59SGQzvT5fo",
+"https://www.youtube.com/watch?v=pE2IUff2lzQ",
+"https://www.youtube.com/watch?v=Gr3At4ez4OA",
+"https://www.youtube.com/watch?v=KO9-Fo1EbkQ",
+"https://www.youtube.com/watch?v=azsXZs3C6DY",
+"https://www.youtube.com/watch?v=e7K0IG15ONo",
+"http://tinyurl.com/yb2mcp5q",
+"https://www.youtube.com/watch?v=Zh-fuDK4HVg",
+"http://www.dailymotion.com/playlist/x55mu8",
+"https://www.youtube.com/watch?v=b97G5YQ8eF8",
+"http://www.dailymotion.com/playlist/x55mud",
+"https://www.youtube.com/watch?v=7JZbMh5kiNo",
+"https://www.youtube.com/watch?v=-0PyR90HMcY",
+"https://www.youtube.com/watch?v=yk-E-BWh4aM",
+"https://www.youtube.com/watch?v=tKArYUxPrBU",
+"https://www.youtube.com/watch?v=Pg7tL5nAwvw",
+"https://www.youtube.com/watch?v=81rfhN4TRFk",
+"http://www.dailymotion.com/playlist/x55muf",
+"http://www.dailymotion.com/playlist/x55mul",
+"http://www.metacafe.com/watch/7703783/mst3k_s02e13_godzilla_vs_the_sea_monster/",
+"https://www.youtube.com/watch?v=xKhdpx-_H3o",
+"https://www.youtube.com/watch?v=gfc6ooM_OL0",
+"https://www.youtube.com/watch?v=6A6QqpThn9o",
+"https://www.youtube.com/watch?v=R8-ZsBZpVq4",
+"https://www.youtube.com/watch?v=5G0HcmRL1uM",
+"https://www.youtube.com/watch?v=bOBibhv7Q_8",
+"https://www.youtube.com/watch?v=uhyiCzWthZg",
+"https://www.youtube.com/watch?v=bWZmNQYstXU",
+"https://www.youtube.com/watch?v=rwVX7yzBt7w",
+"https://www.youtube.com/watch?v=gASvIqetmdk",
+"https://www.youtube.com/watch?v=4iJdI2lnC4s",
+"https://www.youtube.com/watch?v=2vWLwuWPLsQ",
+"https://www.youtube.com/watch?v=hQpIXfZ8jlU",
+"https://www.youtube.com/watch?v=EAH2Ks1bFXU",
+"https://www.youtube.com/watch?v=kR9QPnMYsuQ",
+"https://www.youtube.com/watch?v=I6Hj9ByK1TQ",
+"https://www.youtube.com/watch?v=B0FPXYeLvL0",
+"https://www.youtube.com/watch?v=d5cRFCoUuSw",
+"https://www.youtube.com/watch?v=qND_l5mpQRU",
+"https://www.youtube.com/watch?v=zZrhkRv7n_8",
+"http://www.dailymotion.com/playlist/x55mvr",
+"https://www.youtube.com/watch?v=JVeEEf5vCBg",
+"http://www.metacafe.com/watch/11482631/mst3k-0323-the-castle-of-fu-manchu",
+"https://www.youtube.com/watch?v=9SZrvOCYXP8",
+"https://www.youtube.com/watch?v=ax3q-RkVIt4",
+"https://www.youtube.com/watch?v=nt5SAHgKxKI",
+"https://www.youtube.com/watch?v=uFjBQPYvr3o",
+"https://www.youtube.com/watch?v=4a2_5dEqJ3Y",
+"https://www.youtube.com/watch?v=17xM5qJJQ-I",
+"https://www.youtube.com/watch?v=SW-4_Cx_vRw",
+"https://www.youtube.com/watch?v=YjOMaT4aA7E",
+"https://www.youtube.com/watch?v=_4Eei5MhDDU",
+"https://www.youtube.com/watch?v=CmWz-FEIMY8",
+"https://www.youtube.com/watch?v=Xow4naSPhGE",
+"https://www.youtube.com/watch?v=yzhEnz2MhHI",
+"https://www.youtube.com/watch?v=wjG1FPi0T3A",
+"https://www.youtube.com/watch?v=NbE7QS9V94g",
+"https://www.youtube.com/watch?v=gr3TFZUaKpk",
+"https://www.youtube.com/watch?v=q1ZsASUEnkQ",
+"https://www.youtube.com/watch?v=c6i0q5ytQsI",
+"https://www.youtube.com/watch?v=GPtCQbxXO8E",
+"https://www.youtube.com/watch?v=5jVrsmFXleM",
+"https://www.youtube.com/watch?v=u_ArVbKHZVg",
+"https://www.youtube.com/watch?v=wTnX8ogbPng",
+"https://www.youtube.com/watch?v=tAeTokmEaxM",
+"https://www.youtube.com/watch?v=VIISEsgFGHA",
+"https://www.youtube.com/watch?v=j7A1wr7ec14",
+"https://www.youtube.com/watch?v=NGkkgxFRf_M",
+"https://www.youtube.com/watch?v=S1kFs73N7KQ",
+"https://www.youtube.com/watch?v=fXQIS3cZ9ps",
+"https://www.youtube.com/watch?v=--XF9ivjGF8",
+"https://www.youtube.com/watch?v=jcYAhI8HgYo",
+"https://www.youtube.com/watch?v=Q6McFFvI1KQ",
+"https://www.youtube.com/watch?v=2ShuGJBwmbk",
+"https://www.youtube.com/watch?v=f-8PipctX74",
+"https://www.youtube.com/watch?v=DJVBaoaU1rU",
+"https://www.youtube.com/watch?v=GuIsLNpOKn0",
+"https://www.youtube.com/watch?v=vo0-XKxm9Yk",
+"https://www.youtube.com/watch?v=X-jxRvFFvSI",
+"https://www.youtube.com/watch?v=vmNZwJTp9nM",
+"https://www.youtube.com/watch?v=I71OlRUDCQQ",
+"https://www.youtube.com/watch?v=GH29EY46Do0",
+"https://www.youtube.com/watch?v=U56z-l4FGiw",
+"https://www.youtube.com/watch?v=Xk2oiI9YfU4",
+"http://www.dailymotion.com/playlist/x55mvs",
+"https://www.youtube.com/watch?v=OciggOdKFT4",
+"https://www.youtube.com/watch?v=WkgyvgG2fXs",
+"https://www.youtube.com/watch?v=2ZjOc6782fE",
+"http://tinyurl.com/yarkmnr6",
+"https://www.youtube.com/watch?v=uaQuwVtOgf8",
+"https://www.youtube.com/watch?v=BELBXRnwLcY",
+"https://www.youtube.com/watch?v=5tcunnlA81s",
+"https://www.youtube.com/watch?v=6fwltw2tvxs",
+"https://www.youtube.com/watch?v=Qy6vXTpyQ0o",
+"https://www.youtube.com/watch?v=Nrsjk-_QYhc",
+"https://www.youtube.com/watch?v=qRY1t7CITH4",
+"https://www.youtube.com/watch?v=0CzqwaM8uYM",
+"https://www.youtube.com/watch?v=Zq_Spa9PTyw",
+"https://www.youtube.com/watch?v=13KBhGnJygg",
+"https://www.youtube.com/watch?v=Eoqow7NDm9A",
+"https://www.youtube.com/watch?v=S-OeJTckcRc",
+"https://www.youtube.com/watch?v=R4HjATyvuTY",
+"https://www.youtube.com/watch?v=adgORB7HcqI",
+"https://www.youtube.com/watch?v=srIQ0cjsKjc",
+"https://www.youtube.com/watch?v=UuNfxa_vF0A",
+"https://www.youtube.com/watch?v=RYX1UYLbF7c",
+"https://www.youtube.com/watch?v=mvuOHxsq3h4",
+"https://www.youtube.com/watch?v=YljZdtojVSg",
+"https://www.youtube.com/watch?v=itJ9Pr-H9RU",
+"https://www.youtube.com/watch?v=h4xbQFgw_DY",
+"https://www.youtube.com/watch?v=_GomCoF7d1U",
+"https://www.youtube.com/watch?v=9NOita-7C4k",
+"https://www.youtube.com/watch?v=m0f5Dckh1F8",
+"https://www.youtube.com/watch?v=EyCpqxzvdls",
+"https://www.youtube.com/watch?v=AwZaW4c6eFc",
+"https://www.youtube.com/watch?v=zJDkuBeV_QA",
+"https://www.youtube.com/watch?v=qzIY_RjwSNQ",
+"https://www.youtube.com/watch?v=jCvfdHeJ0LY",
+"https://www.youtube.com/watch?v=83WgWCROcbk",
+"https://www.youtube.com/watch?v=up77D5y4hm4",
+"https://www.youtube.com/watch?v=zHFrZ5lcXMk",
+"https://www.youtube.com/watch?v=9nNICUQWOIw",
+"https://www.youtube.com/watch?v=4UhIzXPvccw",
+"https://www.youtube.com/watch?v=8Y4M4JV_yH8",
+"https://www.youtube.com/watch?v=hq6AlUUCgi4",
+"https://vimeo.com/143358075",
+"https://vimeo.com/147289223",
+"https://www.youtube.com/watch?v=CvuT98RPrNI",
+"https://www.youtube.com/watch?v=0RoxvglS0Es",
+"https://www.youtube.com/watch?v=BscbOScRhbE",
+"https://www.youtube.com/watch?v=Dk35WVCTfew",
+"https://www.youtube.com/watch?v=4zll4BV36Qc",
+"https://www.youtube.com/watch?v=WspeHC7eoOI",
+"https://www.youtube.com/watch?v=cCZRr3gz5-Q",
+"http://www.dailymotion.com/playlist/x55mvx",
+"https://www.youtube.com/watch?v=MWDUtcc_o8A",
+"https://www.youtube.com/watch?v=LM07B-kv4mA",
+"https://www.youtube.com/watch?v=x2XC5XBEjxs",
+"https://www.youtube.com/watch?v=FelS3c2IPck",
+"https://www.youtube.com/watch?v=MzHFncpagQA",
+"https://www.youtube.com/watch?v=h-POdCTOUZY",
+"https://www.youtube.com/watch?v=h-POdCTOUZY",
+"http://www.dailymotion.com/playlist/x55mw1",
+"https://www.youtube.com/watch?v=IjV-0ibZTuY",
+"https://www.youtube.com/watch?v=wXI7fzNLiyw",
+"https://www.youtube.com/watch?v=z-2Bo3ZM2uo",
+"https://www.youtube.com/watch?v=GnRxbH5Ay4I",
+"https://www.youtube.com/watch?v=0uMPkIiHjb8",
+"http://www.metacafe.com/watch/10729553/mst3k_the_deadly_bees/",
+"https://vimeo.com/96649816",
+"https://www.youtube.com/watch?v=YK6x2GuSNXw",
+"https://www.youtube.com/watch?v=wvQLVHIA2h8",
+"http://www.dailymotion.com/playlist/x55mw2",
+"https://www.youtube.com/watch?v=f0jgoNstum0",
+"https://www.youtube.com/watch?v=eqsYyFRMVWA",
+"http://www.dailymotion.com/playlist/x55mw7",
+"https://www.youtube.com/watch?v=UvPzxC_HpPA",
+"https://www.youtube.com/watch?v=tKYk0eFbtVg",
+"https://www.youtube.com/watch?v=W62ZWobFaYU",
+"http://www.dailymotion.com/playlist/x55mwa",
+"https://www.youtube.com/watch?v=YYY2UiST-mg",
+"https://www.youtube.com/watch?v=cmF6VnjsAhs",
+"https://www.youtube.com/watch?v=Hb83lQwJzJw",
+"https://www.youtube.com/watch?v=MyKMRSP23f8",
+"https://www.youtube.com/watch?v=KLSqySFnAUM",
+"https://www.youtube.com/watch?v=4Qub6jF9g7Q",
+"https://www.youtube.com/watch?v=kP-MR_yoW8E",
+"https://www.youtube.com/watch?v=kROILS6r_e4",
+"https://www.youtube.com/watch?v=PWZncth94j8",
+"https://www.youtube.com/watch?v=UZrNFN_WAOE",
+"https://www.netflix.com/watch/80149173",
+"https://www.netflix.com/watch/80149174",
+"https://www.netflix.com/watch/80149175",
+"https://www.netflix.com/watch/80149176",
+"https://www.netflix.com/watch/80149177",
+"https://www.netflix.com/watch/80149178",
+"https://www.netflix.com/watch/80149179",
+"https://www.netflix.com/watch/80149180",
+"https://www.netflix.com/watch/80149181",
+"https://www.netflix.com/watch/80149182",
+"https://www.netflix.com/watch/80149183",
+"https://www.netflix.com/watch/80149184",
+"https://www.netflix.com/watch/80149185",
+"https://www.netflix.com/watch/80149186",
+	];
 
 function joelLinks(){
     var joelRandom=Math.floor(Math.random()*107);
