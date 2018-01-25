@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odin Project RoShamBo</title>
+</head>
+<body>
+<script>
+let computerWinCount = 0;
+let playerWinCount = 0;
+let playerInput = "";
+input();
+
+function input() {
+    playerInput = prompt ("Rock, Paper or Scissors?");
+    playerInput = playerInput.toLowerCase();
+    errorCheck(playerInput);
+
+}
+function errorCheck (playerInput) {
+       if (playerInput == "rock" || playerInput == "paper" || playerInput == "scissors") {
+
+        playGame();
+
+    }
+    else {
+        alert("Invalid input! Try again!");
+        input();
+         }
+}
+
+function playGame (playerInput){
+            outCome = Math.floor((Math.random()*3)+1);
+            if(outCome == 1){
+                alert("It's a tie! Play again!");
+                input();
+            }
+            if(outCome == 2){
+                alert("Sorry You Lose!");
+                computerWinCount ++;
+
+            }
+            if(outCome== 3){
+                alert("Yay! You Win!")
+                playerWinCount ++;
+            }
+        alert ("The score is now: Computer " + computerWinCount + " You: " + playerWinCount);
+        if (playerWinCount == 5 || computerWinCount == 5 ) {
+            alert("Match Over!")
+            matchOver();
+
+        }
+        else {
+            alert ("Play again!");
+            input();
+        }
+        }
+    function matchOver(){
+
+        if(playerWinCount == 5){
+            alert("You won the match 5 to " + computerWinCount);
+            goodBye();
+        }
+        else {
+            alert("Sorry you lost the match 5 to " + playerWinCount);
+            goodBye();
+        }
+
+        }
+function goodBye() {
+    alert("Thanks for Playing!");
+
+
+}
+</script>
+</body>
+</html>
