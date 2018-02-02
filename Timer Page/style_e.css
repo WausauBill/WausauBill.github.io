@@ -6,7 +6,7 @@ body {
 }
 .defaultCountdown {
     width: 100%;
-    height: 12vw;
+    height: 17vw;
     margin-bottom: 5vw;
    
 }
@@ -114,6 +114,7 @@ input {
 
 /* Timer Styles from Plugin Author, with local mods */
 /* jQuery Countdown styles 2.0.0. */
+
 .is-countdown {
 	border: 1px solid #ccc;
 	background-color: #F9DC5C;
@@ -159,7 +160,7 @@ input {
 	text-align: center;
 }
 .countdown-amount {
-    font-size: 7vw;
+    font-size: 10vw;
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
     
