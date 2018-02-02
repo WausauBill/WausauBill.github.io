@@ -54,9 +54,11 @@ input {
 /*Styles for Radio Buttons from https://thestizmedia.com/radio-buttons-as-toggle-buttons-with-css/ */
 .switch-field {
     font-family: "Roboto", Tahoma, Verdana, sans-serif;
+    font-size: 2vw;
     font-weight: bold;
+    text-align: center;
     overflow: hidden;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
@@ -65,6 +67,7 @@ input {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 2.1vw;
+    text-align: center;
 }
 
 .switch-field input {
@@ -75,10 +78,10 @@ input {
     border: 0;
     overflow: hidden;
 }
-
+/*
 .switch-field label {
   float: left;
-}
+}*/
 
 .switch-field label {
   display: inline-block;
@@ -112,11 +115,11 @@ input {
   box-shadow: none;
 }
 
-.switch-field label:antigo {
+.switch-field label:first-of-type {
   border-radius: 4px 0 0 4px;
 }
 
-.switch-field label: wausau {
+.switch-field label:last-of-type {
   border-radius: 0 4px 4px 0;
 }
 

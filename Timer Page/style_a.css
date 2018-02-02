@@ -37,8 +37,9 @@ button {
 }
 input {
     font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
     background-color: #E3D985;
-    width: 50%;
+    width: 49%;
     
 }
 .timer {
@@ -46,9 +47,12 @@ input {
     margin: auto;
 }
 /*Styles for Radio Buttons from https://thestizmedia.com/radio-buttons-as-toggle-buttons-with-css/ */
+
 .switch-field {
     font-family: "Roboto", Tahoma, Verdana, sans-serif;
+    font-size: 2vw;
     font-weight: bold;
+    text-align: center;
     overflow: hidden;
     width: 50%;
     margin: auto;
@@ -66,10 +70,10 @@ input {
     border: 0;
     overflow: hidden;
 }
-
+/*
 .switch-field label {
   float: left;
-}
+} */
 
 .switch-field label {
   display: inline-block;
@@ -112,6 +116,7 @@ input {
 
 /* Timer Styles from Plugin Author, with local mods */
 /* jQuery Countdown styles 2.0.0. */
+
 .is-countdown {
 	border: 1px solid #ccc;
 	background-color: #FFFFB3;
