@@ -21,12 +21,14 @@ h1 {
     font-size: 12vw;
     margin-bottom: 4vw;
 }
-p {
+.tbox {
     font-family: 'Roboto', sans-serif;
     font-size: 4vw;
     font-weight: bold;
-    color: #DBF4AD;
-    
+    color: #dbf4ad;
+    background-color: transparent;
+    margin-bottom: 3vw;
+    border-style: hidden;
     
 }
 button {
