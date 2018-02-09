@@ -80,15 +80,10 @@ function setTimeDefaults() {
         }
     
     nowISO = year + "-" + month + "-" + date + "T" + hours + ":" + minutes;
-  document.getElementById("period1Time").defaultValue = nowISO; 
-document.getElementById("period2Time").defaultValue = nowISO;
-document.getElementById("period3Time").defaultValue = nowISO; 
-document.getElementById("period4Time").defaultValue = nowISO; 
-document.getElementById("period5Time").defaultValue = nowISO; 
-document.getElementById("period6Time").defaultValue = nowISO; 
-document.getElementById("period7Time").defaultValue = nowISO; 
-document.getElementById("period8Time").defaultValue = nowISO; 
+for (var i=1; i < 9; i++){
+    document.getElementById("period" + i + "Time").defaultValue = nowISO; 
     }
+}
 </script> 
 
 <!--Script and Div for Period 1 -->
