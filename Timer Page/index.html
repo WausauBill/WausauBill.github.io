@@ -101,18 +101,24 @@ document.getElementById("period8Time").defaultValue = nowISO;
 <div id="period1" class="defaultCountdown"></div>
 </div>
 <script>
-document.getElementById("first").onclick = setPeriod1;
-function setPeriod1() {
-    
-    $('#period1').countdown('destroy');
-    var endPeriod1 = new Date(document.getElementById("period1Time").value);
-        $(function () {
-            $('#period1').countdown({until: endPeriod1, format: 'hMS',
+document.getElementById("first").onclick = setPeriod("#period1", "period1Time");
+
+function setPeriod(div, getTime) {
+    return function(a,b){
+    //var getTime = "period1Time";
+    //var div = "#period1";
+    console.log(div);
+    $(div).countdown('destroy');
+    var endPeriod = new Date(document.getElementById(getTime).value);
+        $(function() {
+            $(div).countdown({until: endPeriod, format: 'hMS',
             padZeroes: true,
             onExpiry: notifyMe                       
                         });
 	   });
     }
+}
+
 </script>
 
 <!-- Script and Div for Period 2 -->
@@ -124,18 +130,8 @@ function setPeriod1() {
 </div>
 
 <script>
-document.getElementById("second").onclick = setPeriod2;
-function setPeriod2() {
-    
-    $('#period2').countdown('destroy');
-    var endPeriod2 = new Date(document.getElementById("period2Time").value);
-        $(function () {
-            $('#period2').countdown({until: endPeriod2, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("second").onclick = setPeriod("#period2", "period2Time");
+
 </script> 
 <!-- Script and Div for Period 3 -->
 <div class="timer" >
@@ -146,18 +142,7 @@ function setPeriod2() {
 </div>
 
 <script>
-document.getElementById("third").onclick = setPeriod3;
-function setPeriod3() {
-    
-    $('#period3').countdown('destroy');
-    var endPeriod3 = new Date(document.getElementById("period3Time").value);
-        $(function () {
-            $('#period3').countdown({until: endPeriod3, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("third").onclick = setPeriod("#period3", "period3Time");
 </script>
 <!-- Script and Div for Period 4 -->
 <div class="timer" >
@@ -168,18 +153,8 @@ function setPeriod3() {
 </div>
 
 <script>
-document.getElementById("fourth").onclick = setPeriod4;
-function setPeriod4() {
-    
-    $('#period4').countdown('destroy');
-    var endPeriod4 = new Date(document.getElementById("period4Time").value);
-        $(function () {
-            $('#period4').countdown({until: endPeriod4, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("fourth").onclick = setPeriod("#period4", "period4Time");
+
 </script>
 <!-- Script and Div for Period 5 -->
 <div class="timer" >
@@ -190,18 +165,8 @@ function setPeriod4() {
 </div>
 
 <script>
-document.getElementById("fifth").onclick = setPeriod5;
-function setPeriod5() {
-    
-    $('#period5').countdown('destroy');
-    var endPeriod5 = new Date(document.getElementById("period5Time").value);
-        $(function () {
-            $('#period5').countdown({until: endPeriod5, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("fifth").onclick = setPeriod("#period5", "period5Time");
+
 </script>
 <!-- Script and Div for Period 6 -->
 <div class="timer" >
@@ -212,18 +177,8 @@ function setPeriod5() {
 </div>
 
 <script>
-document.getElementById("sixth").onclick = setPeriod6;
-function setPeriod6() {
-    
-    $('#period6').countdown('destroy');
-    var endPeriod6 = new Date(document.getElementById("period6Time").value);
-        $(function () {
-            $('#period6').countdown({until: endPeriod6, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("sixth").onclick = setPeriod("#period6", "period6Time");
+
 </script>
 <!-- Script and Div for Period 7 -->
 <div class="timer" >
@@ -234,18 +189,8 @@ function setPeriod6() {
 </div>
 
 <script>
-document.getElementById("seventh").onclick = setPeriod7;
-function setPeriod7() {
-    
-    $('#period7').countdown('destroy');
-    var endPeriod7 = new Date(document.getElementById("period7Time").value);
-        $(function () {
-            $('#period7').countdown({until: endPeriod7, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe
-                        });
-	   });
-    }
+document.getElementById("seventh").onclick = setPeriod("#period7", "period7Time");
+f
 </script>
 <!-- Script and Div for Period 8 -->
 <div class="timer" >
@@ -256,18 +201,8 @@ function setPeriod7() {
 </div>
 
 <script>
-document.getElementById("eighth").onclick = setPeriod8;
-function setPeriod8() {
-    
-    $('#period8').countdown('destroy');
-    var endPeriod8 = new Date(document.getElementById("period8Time").value);
-        $(function () {
-            $('#period8').countdown({until: endPeriod8, format: 'hMS',
-            padZeroes: true,
-            onExpiry: notifyMe 
-                        });
-	   });
-    }
+document.getElementById("eighth").onclick = setPeriod("#period8", "period8Time");
+
 </script>
 <script>
 function notifyMe() {
